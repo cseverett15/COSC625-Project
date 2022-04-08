@@ -41,7 +41,7 @@ public class GameSettings : MonoBehaviour
         gameMode = mode;
     }
 
-    public void SetGameMode(string mode)
+    public string SetGameMode(string mode)
     {
         if (mode == "Easy")
             SetGameMode(EGameMode.EASY);
@@ -54,6 +54,7 @@ public class GameSettings : MonoBehaviour
 
         else
             SetGameMode(EGameMode.NOT_SET);
+        return mode;
     }
 
     public string GetGameMode()
@@ -69,4 +70,21 @@ public class GameSettings : MonoBehaviour
         Debug.LogError("ERROR: Game Level is not set.");
         return " ";
     }
+
+    //passing difficulty to score manager
+
+    /*public void FindDifficulty(int difficulty)
+    {
+        if (mode == "Easy")
+            int difficulty = 1;
+
+        else if (mode == "Medium")
+            int difficulty = 2;
+
+        else if (mode == "Easy")
+            int difficulty = 3;
+        else
+            int difficulty = 0;
+    }*/
+
 }

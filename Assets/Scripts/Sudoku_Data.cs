@@ -1,29 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 // creates easy difficulty grid when selected from start menu
 public class EasyData : MonoBehaviour
 {
+
+    /*  We will either need to generate the puzzles with a generator 
+         *  or find a library of sudoku puzzles that we can just add to 
+         *  each difficulty class
+         */
     public static List<Sudoku_Data.BoardData> getData()
     {
         List<Sudoku_Data.BoardData> data = new List<Sudoku_Data.BoardData>();
 
-        /*  We will either need to generate the puzzles with a generator 
-         *  or find a library of sudoku puzzles that we can just add to 
-         *  each difficulty class
-         */
+
         data.Add(new Sudoku_Data.BoardData(
             //unsolved data
             new int[81] {0, 1, 4, 0, 0, 0, 0, 3, 0,
                          0, 3, 0, 5, 1, 0, 8, 0, 0,
-                         0, 8, 0, 0, 0, 9, 0, 0, 6,
-                         4, 0, 1, 8, 0, 0, 6, 0, 7,
-                         0, 0, 3, 2, 5, 6, 4, 0, 0,
+                         0, 8, 0, 0, 0, 9, 0, 0, 0,
+                         4, 0, 1, 8, 0, 0, 6, 0, 0,
+                         0, 0, 3, 0, 5, 0, 4, 0, 0,
                          0, 0, 6, 0, 0, 7, 2, 0, 0,
                          9, 0, 0, 7, 0, 0, 0, 4, 0,
-                         0, 7, 5, 0, 8, 4, 0, 0, 2,
+                         0, 0, 5, 0, 8, 0, 0, 0, 2,
                          0, 4, 0, 3, 2, 0, 7, 1, 0},
+
             //solved data
             new int[81] {2, 1, 4, 6, 7, 8, 9, 3, 5,
                          3, 6, 9, 5, 1, 2, 8, 7, 4,
@@ -37,8 +41,9 @@ public class EasyData : MonoBehaviour
 
         return data;
 
-          
+
     }
+
 }
 
 // creates medium difficulty grid when medium is selected from start menu
@@ -60,6 +65,7 @@ public class MedData : MonoBehaviour
                          9, 0, 0, 7, 0, 0, 0, 4, 0,
                          0, 0, 5, 0, 8, 0, 0, 0, 2,
                          0, 4, 0, 3, 2, 0, 7, 1, 0},
+
             //solved data
             new int[81] {2, 1, 4, 6, 7, 8, 9, 3, 5,
                          3, 6, 9, 5, 1, 2, 8, 7, 4,
@@ -112,6 +118,9 @@ public class HardData : MonoBehaviour
 
     }
 }
+
+
+
 
 public class Sudoku_Data : MonoBehaviour
 {

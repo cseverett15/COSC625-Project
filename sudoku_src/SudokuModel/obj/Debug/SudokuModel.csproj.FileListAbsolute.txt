@@ -1,6 +1,0 @@
-C:\Users\ledri\Desktop\sudoku_src\SudokuModel\bin\Debug\SudokuModel.dll
-C:\Users\ledri\Desktop\sudoku_src\SudokuModel\bin\Debug\SudokuModel.pdb
-C:\Users\ledri\Desktop\sudoku_src\SudokuModel\obj\Debug\SudokuModel.csproj.AssemblyReference.cache
-C:\Users\ledri\Desktop\sudoku_src\SudokuModel\obj\Debug\SudokuModel.csproj.CoreCompileInputs.cache
-C:\Users\ledri\Desktop\sudoku_src\SudokuModel\obj\Debug\SudokuModel.dll
-C:\Users\ledri\Desktop\sudoku_src\SudokuModel\obj\Debug\SudokuModel.pdb
